@@ -1,9 +1,8 @@
-import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="flex items-center">
-      Elivelton Ferreira
+      <p className="text-16">Elivelton Ferreira</p>
     </main>
   );
 }
