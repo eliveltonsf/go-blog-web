@@ -9,9 +9,6 @@ interface QueryProviderProps {
 }
 export function QueryProvider({ children }: QueryProviderProps) {
   const client = new QueryClient();
-
-  const teste = "teste";
-
   return (
     <ThemeProvider
       attribute="class"
@@ -19,7 +16,6 @@ export function QueryProvider({ children }: QueryProviderProps) {
       enableSystem
       disableTransitionOnChange
     >
-      {" "}
       <QueryClientProvider client={client}>{children}</QueryClientProvider>
     </ThemeProvider>
   );
