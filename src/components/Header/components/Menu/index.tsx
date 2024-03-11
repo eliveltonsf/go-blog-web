@@ -2,31 +2,24 @@ import React from "react";
 
 import {
   NavigationMenu,
-  NavigationMenuList,
   NavigationMenuItem,
-  NavigationMenuTrigger,
-  NavigationMenuContent,
   NavigationMenuLink,
+  NavigationMenuList,
 } from "@/components/ui/navigation-menu";
+import { NavigationMenuProps } from "@radix-ui/react-navigation-menu";
 import Link from "next/link";
 
-export default function Menu() {
+export default function Menu({
+  ...rest
+}: NavigationMenuProps & React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <NavigationMenu>
-      <NavigationMenuList className="flex gap-20">
+    <NavigationMenu {...rest}>
+      <NavigationMenuList className="hidden sm:flex sm:gap-32">
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink>Mais recente</NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink>Notícias</NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink>Comunidade</NavigationMenuLink>
+          <Link href="/feed" legacyBehavior passHref>
+            <NavigationMenuLink className="hover:text-primary">
+              Notícias
+            </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>

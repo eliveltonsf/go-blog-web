@@ -1,9 +1,10 @@
 "use client";
 
-import { HiSun, HiMoon } from "react-icons/hi";
+import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
+import { HiMoon, HiSun } from "react-icons/hi";
+
 export default function ModeToggle() {
   const { setTheme } = useTheme();
   const [mode, setMode] = useState(true);
@@ -14,7 +15,7 @@ export default function ModeToggle() {
 
   return (
     <Button
-      className="text-primary bg-card"
+      className="hidden sm:flex sm:bg-transparent sm:hover:bg-transparent"
       variant="secondary"
       size="icon"
       onClick={() => setMode(!mode)}
