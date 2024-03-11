@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <section className="flex justify-between items-center h-[8rem] w-full mt-[40rem] border-t border-t-primary">
+    <section className="flex justify-between items-center h-[8rem] w-full mt-[50rem] lg:mt-[40rem] xl:mt-[30rem] border-t border-t-primary">
       <div className="flex justify-start items-center w-[50%]">
         <p>2024 | Todos os direitos reservados.</p>
       </div>
