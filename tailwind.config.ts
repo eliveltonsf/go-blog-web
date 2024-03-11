@@ -25,7 +25,6 @@ const config = {
       48: '4.8rem',
       56: '5.6rem',
       64: '6.4rem',
-
     },
     container: {
       center: true,
@@ -71,7 +70,25 @@ const config = {
           {
             lineHeight: '4.8rem'
           }
-        ]
+        ],
+        48: [
+          '4.8rem',
+          {
+            lineHeight: '5.6rem'
+          }
+        ],
+        "sm": [
+          '1.4rem',
+          {
+            lineHeight: '2.2rem'
+          }
+        ],
+        "lg": [
+          '1.6rem',
+          {
+            lineHeight: '2.4rem'
+          }
+        ],
       },
       breakpoints: {
         sm: '576px',
