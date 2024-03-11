@@ -3,9 +3,8 @@ import "@/styles/globals.css";
 
 import localFont from "next/font/local";
 
-import { cn } from "@/lib/utils";
 import Header from "@/components/Header";
-import Footer from "./footer";
+import { cn } from "@/lib/utils";
 
 const wotfard = localFont({
   src: [

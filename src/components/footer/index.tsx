@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Footer() {
   return (
     <section className="flex justify-between items-center h-[8rem] w-full mt-[40rem] border-t border-t-primary">

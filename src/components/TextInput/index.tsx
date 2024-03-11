@@ -1,5 +1,5 @@
-import { InputHTMLAttributes, useState } from "react";
 import Image from "next/image";
+import { InputHTMLAttributes } from "react";
 
 type TextInputProps = {
   label?: string;
