@@ -6,7 +6,12 @@ type getNewsDataProps = {
 
 export const getNewsData = async ({query}:getNewsDataProps) => {
   const response = await axios.get(
-   `http://servicodados.ibge.gov.br/api/v3/noticias${query && query}`
+   `http://servicodados.ibge.gov.br/api/v3/noticias${query && query}`,
+   {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+   }
   );
   return response.data;
 };
